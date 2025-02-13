@@ -1,0 +1,27 @@
+.flow-card-group-container {
+  min-width: 345px;
+  height: 100%;
+  padding-top: 19px;
+  overflow-y: auto;
+  border-left: 1px solid #dfdfdf;
+  &:first-child {
+    border-left: none;
+  }
+  .card-group-head {
+    margin-bottom: 41px;
+    padding: 0 10px;
+    color: #8c8c8c;
+  }
+  .card-group-content {
+    padding: 0 10px;
+    .stage-container {
+      position: relative;
+      white-space: nowrap;
+      .task-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+    }
+  }
+}

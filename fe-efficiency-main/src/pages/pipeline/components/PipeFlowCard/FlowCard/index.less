@@ -1,0 +1,73 @@
+.flow-card {
+  width: 280px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+  .state-bar {
+    width: 100%;
+    height: 4px;
+    &.wait {
+      background-color: #d9d9d9;
+    }
+    &.progress {
+      background-color: #87d2ff;
+    }
+    &.success {
+      background-color: #64d16d;
+    }
+    &.fail {
+      background-color: #e6524b;
+    }
+    &.aborted {
+      background-color: #f87872;
+    }
+  }
+  .card-head {
+    padding: 12px;
+    .state {
+      font-size: 14px;
+      &.wait {
+        color: #d9d9d9;
+      }
+      &.progress {
+        color: #87d2ff;
+      }
+      &.success {
+        color: #64d16d;
+      }
+      &.fail {
+        color: #e6524b;
+      }
+      &.aborted {
+        color: #f87872;
+      }
+    }
+    .name {
+      padding-left: 10px;
+      color: #262626;
+      font-weight: bold;
+    }
+  }
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+  }
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 10px 12px;
+    color: #999;
+    .check-log {
+      display: flex;
+      .resources {
+        padding-right: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}

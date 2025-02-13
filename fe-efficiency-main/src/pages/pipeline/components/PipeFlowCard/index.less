@@ -1,0 +1,25 @@
+.pipe-flow-card {
+  display: flex;
+  min-width: 100vw;
+  .side-bar {
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 300px;
+    height: calc(100vh - 103px);
+    padding: 0 16px;
+    vertical-align: top;
+    background: #fff;
+    border-right: 1px solid #eee;
+  }
+  .content {
+    display: flex;
+    width: calc(100vw - 300px);
+    overflow-y: scroll;
+  }
+}
+
+.empty {
+  padding: 200px 0;
+  font-size: 20px;
+  text-align: center;
+}

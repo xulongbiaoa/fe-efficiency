@@ -1,0 +1,46 @@
+.appLayout {
+  display: flex;
+  margin: -24px;
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #eee;
+    .logo {
+      width: 100%;
+      height: 53px;
+      line-height: 53px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      img {
+        width: 130px;
+        object-fit: contain;
+      }
+    }
+  }
+  .content {
+    width: 100%;
+    margin-left: 200px;
+    padding: 78px 24px 24px 24px;
+    .chooseAppContainer {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      z-index: 1;
+      width: 100%;
+      padding: 10px 20px;
+      color: #333;
+      font-size: 13px;
+      background-color: #fff;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+  }
+}

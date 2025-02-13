@@ -1,0 +1,51 @@
+.logsModal {
+  width: 1000px !important;
+  div:nth-child(3) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .menuItem {
+    .active {
+      color: #333 !important;
+      background-color: #e5e5e5 !important;
+    }
+  }
+
+  .logSidebar {
+    height: 70vh;
+    padding-bottom: 20px;
+    overflow: scroll;
+    border-right: 1px solid #f0f0f0;
+  }
+  .logContent {
+    // height: 280px;
+    height: 70vh;
+    .logContent-title {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      height: 30px;
+      padding: 4px 8px;
+      color: #fff;
+      background: #262626;
+      border-bottom: 2px solid #595959;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+    }
+    .logContent-code {
+      height: 65vh;
+      padding: 4px 8px;
+      overflow: scroll;
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}
+:global(.ant-modal-wrap) {
+  overflow: hidden;
+}

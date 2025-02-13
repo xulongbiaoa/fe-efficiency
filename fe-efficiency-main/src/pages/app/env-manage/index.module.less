@@ -1,0 +1,89 @@
+.noBorder {
+  border: none;
+  :global(.ant-card-head) {
+    border: none !important;
+  }
+  :global(.ant-card-head-title) {
+    padding-bottom: 0;
+  }
+}
+:global(.ant-descriptions-row > td) {
+  padding-bottom: 8px;
+}
+
+.envItem {
+  .machine {
+    display: inline-block;
+    padding: 1px 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: rgb(72, 153, 231);
+    border-radius: 5px;
+  }
+  .envStatus {
+    font-size: 12px;
+  }
+  .setting {
+    cursor: pointer;
+
+    svg {
+      transform: translateY(10px);
+      &:hover {
+        color: #1890ff;
+      }
+    }
+  }
+  .icon-delete {
+    display: inline-block;
+    margin-right: 20px;
+    transform: translateY(8px);
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+  .operation {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+    .operation-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 21px;
+      margin-right: 6px;
+      padding: 10px 10px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0;
+      background: rgb(73, 152, 231);
+      border-radius: 5px;
+    }
+  }
+  :global(.ant-card) {
+    position: relative;
+    height: 100%;
+    padding-bottom: 20px;
+    border: 1px solid rgba(73, 152, 231, 0.25);
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px rgba(73, 152, 231, 0.25);
+    &:hover {
+      border-color: #1890ff;
+    }
+  }
+  :global(.ant-card-head) {
+    padding-right: 16px;
+    padding-left: 16px;
+    border: none !important;
+  }
+  :global(.ant-card-body) {
+    padding: 0 16px;
+  }
+}

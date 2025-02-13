@@ -1,0 +1,126 @@
+.controlContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pipelineModal {
+  width: 800px !important;
+  :nth-child(3) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  controlcontainer .pipelineSidebar {
+    min-height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-right: 1px solid #f0f0f0;
+  }
+  .templates {
+    height: 400px;
+    overflow: scroll;
+    .pipelineContent {
+      position: relative;
+      width: 100%;
+      padding-top: 20px;
+      .pipelineItem {
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        &:hover {
+          cursor: pointer;
+        }
+        &.selected {
+          border: 1px solid blue;
+        }
+      }
+    }
+    .empty {
+      padding-top: 150px;
+      color: #999;
+      text-align: center;
+    }
+  }
+}
+
+.template-chart {
+  display: inline-block;
+  vertical-align: top;
+  .node:last-child::before {
+    border-bottom: 1px solid #87d2ff;
+  }
+  .node:nth-child(n + 2)::before {
+    border-left: 1px solid #87d2ff;
+  }
+  &:first-child {
+    :first-child::before {
+      left: 50%;
+      width: 50%;
+      border-right: none;
+      border-left: none;
+      border-radius: 0 !important;
+    }
+    :last-child::before {
+      left: 50%;
+      width: 50%;
+      border-left: none;
+    }
+  }
+  &:last-child {
+    :first-child::before {
+      right: 50%;
+      width: 50%;
+      border-right: none;
+      border-left: none;
+      border-radius: 0 !important;
+    }
+    :last-child::before {
+      right: 50%;
+      width: 50%;
+      border-right: none;
+      border-left: none;
+      border-radius: 0 !important;
+    }
+  }
+}
+
+.node {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+
+  &:first-child::before {
+    border-right: none;
+    border-left: none;
+    border-radius: 0 !important;
+  }
+
+  &:last-child::before {
+    border-radius: 0 0 16px 16px;
+  }
+  &::before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #87d2ff;
+    border-bottom: 1px solid #87d2ff;
+    // border-left: 1px solid #87d2ff;
+    -webkit-transition: border 0.2s ease-in;
+    transition: border 0.2s ease-in;
+    content: '';
+  }
+  .task-container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+}

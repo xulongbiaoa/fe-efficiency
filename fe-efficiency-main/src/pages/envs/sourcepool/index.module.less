@@ -1,0 +1,45 @@
+.sourcepool-container {
+  .source-node {
+    width: 100%;
+    overflow: hidden;
+    .node-item {
+      width: 250px;
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #eee;
+      transition: all 0.3s;
+      &:active {
+        background-color: transparent;
+      }
+      &.selected {
+        border-color: #0984f9;
+        border-width: 1px;
+        transform: scale(1.03);
+      }
+      .head {
+        margin: 0 10px;
+        padding: 10px 0;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid #f9f9f9;
+        img {
+          width: 22px;
+          margin-right: 5px;
+          vertical-align: sub;
+        }
+      }
+      .content {
+        padding: 10px 0;
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+  }
+  .source-table {
+    min-height: 70vh;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+  }
+}

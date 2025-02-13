@@ -1,0 +1,23 @@
+.env-config-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    width: 250px;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .right {
+    width: calc(100% - 260px);
+    height: 90vh;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+}

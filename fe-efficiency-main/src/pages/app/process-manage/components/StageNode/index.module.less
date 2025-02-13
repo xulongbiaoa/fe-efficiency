@@ -1,0 +1,40 @@
+.node {
+  width: 250px;
+  padding: 12px 20px 20px 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+  }
+  &:active {
+    background-color: transparent;
+  }
+  &.selected {
+    border: 1px solid #0984f9;
+  }
+  .header {
+    .stageName {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      .name {
+        color: #666;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+    .info {
+      color: #666;
+      font-size: 13px;
+      user-select: none;
+      .value {
+        color: #999;
+      }
+    }
+  }
+}
